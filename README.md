@@ -70,9 +70,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+Para iniciar la aplicación se recomienda tener estas variables con su respectivo valor: 
+
 Environment variables
 
-MONGODB_URL="mongodb+srv://julian:119355@cluster0.e1e5s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-BACKEND_PORT="3002"
-BACKEND_DOMAIN="http://localhost:3002"
-FRONTEND_DOMAIN="http://localhost:3000"
+MONGODB_URL: URI de la base de datos en mongo
+BACKEND_PORT: Puerto donde se ejecuta el backend
+BACKEND_DOMAIN: Dominio del backend, ejemplo: "http://localhost:3002"
+FRONTEND_DOMAIN: Dominio del frontend, ejemplo: "http://localhost:3002"
+
+Para poder iniciar el backend se recomienda ejecutar el archivo connection.js (node connection.js)
