@@ -1,13 +1,129 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  display: flex;
+}
+
+.googleMap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 10px;
+}
+
+.sectionLeft {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+  background-color: #fafafe;
+  margin-left: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  border-radius: 20px;
+  margin: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.information-collapse {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-collapse input,
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.information-collapse #button-submit {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.information-collapse #button-submit:hover {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 10px 80px;
+}
+
+.information-collapse input {
+  outline: none;
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(15, 12, 12);
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.information-no-collapse {
+  transition: 2s;
+  display: none;
+}
+
+.sectionTitle {
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionTitle button {
+  background-color: rgb(172, 36, 13);
+  border-radius: 10px;
+  line-height: 12px;
+  width: 25px;
+  height: 30px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  font-size: 20px;
+  color: wheat;
+  top: 0;
+  right: 0;
+  transition: 0.4s;
+}
+
+.sectionTitle button:hover {
+  background: rgb(172, 36, 13);
+  width: 40px;
+  height: 35px;
 }

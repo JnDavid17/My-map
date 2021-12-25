@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Map  from "./Map";
+import { CreateStores } from "./CreateStores";
 
+const mapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBSs_mFCYVx7GVn-idDEaKwEzsa66MaR0s&callback=initMap&v=weekly"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Map/>
+    </React.Fragment>
   );
 }
 
